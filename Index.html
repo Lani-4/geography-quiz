@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Geography Quiz</h1>
+        <P>10 questions, How many can you get right?</P>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+            <div id="progress">Question <span id="current">1</span> of 10</div>
+            <div id="question-box">
+                <h2 id="question-text"></h2>
+            </div>
+            <div id="options-box">
+                <button class="option-btn" id="optA"></button>
+                <button class="option-btn" id="optB"></button>
+                <button class="option-btn" id="optC"></button>
+                <button class="option-btn" id="optD"></button>
+            </div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+        <h1>Quiz complete 🎉</h1>
+        <p>You scored <span id="final-score"></span> out of 10</p>
+        <button id="restart-btn">Play Again</button>
+    </div>
+    <script src="Question.js"></script>
+</body> 
+</html>
